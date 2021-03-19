@@ -1,0 +1,37 @@
+{
+  "name": "front-example",
+  "version": "1.0.0",
+  "description": "example for front-end",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "watch": "webpack-dev-server --mode development --open --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrayItadakimasu/front-example.git"
+  },
+  "author": "DrayItadakimasu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrayItadakimasu/front-example/issues"
+  },
+  "homepage": "https://github.com/DrayItadakimasu/front-example#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "mini-css-extract-plugin": "^1.3.8",
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
