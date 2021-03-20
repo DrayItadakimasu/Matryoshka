@@ -1,0 +1,142 @@
+#welcome-section {
+  min-height: 566px;
+  z-index: 30;
+
+  .plan-image {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .bee-slot {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .logo {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    z-index: 30;
+  }
+}
+#big-slot {
+  z-index: 20;
+  position: absolute;
+  top: 126px;
+  left: 0;
+}
+#net-section {
+  position: relative;
+  height: 1250px;
+  .texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+
+  .build-image {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 30;
+  }
+}
+#work-types {
+  position: relative;
+  padding-top: 530px;
+  z-index: 30;
+  .icons-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon-box {
+    width: calc(100% / 4);
+    text-align: center;
+    margin-bottom: 90px;
+
+    &__title {
+      font-size: 22.477px;
+      font-family: 'Copperplate';
+      color: rgb(255, 255, 255);
+      line-height: 0.8;
+      font-weight: normal;
+      height: 70px;
+    }
+
+    &__image {
+      max-width: 100%;
+    }
+
+    &.reverse{
+      display: flex;
+      flex-wrap: wrap-reverse;
+      flex-direction: column;
+      .icon-box__title{
+        margin-top: 25px;
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+  }
+}
+#work-types-info{
+  position: relative;
+  height: 1200px;
+  background: #000;
+  padding-top: 115px;
+  .draw-image{
+    position: absolute;
+    left: 0;
+    top: -794px;
+    width: 100%;
+  }
+  .info-box-grid{
+    width: 100%;
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  .grid-sizer,
+  .grid-item{
+    width: calc(50% - 15px) ;
+    margin-bottom: 30px;
+  }
+  .info-box{
+    padding: 23px 22px 40px 30px;
+    background-color: rgba(83, 83, 83, 0.502);
+    align-self: flex-start;
+    width: 100%;
+    &__title{
+      font-size: 24px;
+      font-family: "Copperplate";
+      color: rgb(181, 159, 103);
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    &__desc{
+      margin-top: 24px;
+      font-size: 14px;
+      font-family: "OpenSans";
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+    }
+  }
+
+}
+
+

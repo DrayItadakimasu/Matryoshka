@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  pointer-events: none;
+  user-select: none;
+}
+body{
+  background: #04172e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app{
+  position: relative;
+  width: 100%;
+  background: #04172e;
+}
+input,textarea,button{
+  &:focus{
+    outline: none;
+  }
+}
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+//style
+.container{
+  position: relative;
+  width: 1030px;
+  margin: 0 auto;
+}
