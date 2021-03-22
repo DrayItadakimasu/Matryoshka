@@ -407,9 +407,9 @@ body {
 
 #app {
   position: relative;
-  width: 100%;
+  width: 1280px;
   background: #04172e;
-  max-width: 100vw;
+  max-width: 1600px;
 }
 
 input:focus, textarea:focus, button:focus {
@@ -483,12 +483,114 @@ a:hover {
     width: 30%;
   }
 }
+@media (max-width: 700px) {
+  #welcome-section {
+    min-height: 331px;
+  }
+}
+@media (max-width: 575px) {
+  #welcome-section {
+    min-height: 250px;
+    position: relative;
+  }
+  #welcome-section .logo {
+    top: 24px;
+    width: 100px;
+    height: 100px;
+  }
+  #welcome-section .logo img {
+    max-width: 100%;
+  }
+  #welcome-section .contacts {
+    position: absolute;
+    right: 0;
+    top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+  #welcome-section .contacts a, #welcome-section .contacts p {
+    font-size: 12px;
+  }
+  #welcome-section .contacts .vk {
+    margin-right: 10px;
+  }
+  #welcome-section .contacts .inst {
+    margin-right: 20px;
+  }
+  #welcome-section .contacts .city {
+    margin-top: 5px;
+  }
+  #welcome-section .contacts .tel-wrapper {
+    transform: translateY(10px);
+  }
+  #welcome-section .plan-image {
+    height: 100%;
+  }
+}
 
 #big-slot {
   z-index: 20;
   position: absolute;
   top: 126px;
   left: 0;
+}
+#big-slot .text {
+  width: 500px;
+  position: absolute;
+  top: 271px;
+  left: 0;
+}
+#big-slot .text h1 {
+  margin-bottom: 75px;
+  font-size: 28.596px;
+  font-family: "Copperplate";
+  color: #c7ae6d;
+  line-height: 0.786;
+}
+#big-slot .text h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-family: "Copperplate";
+  color: white;
+  text-transform: uppercase;
+  line-height: 0.75;
+}
+#big-slot .text p {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: white;
+  line-height: 1.2;
+}
+@media (max-width: 700px) {
+  #big-slot {
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+  #big-slot img {
+    display: none;
+  }
+  #big-slot .text {
+    position: relative;
+    top: unset;
+    left: unset;
+    width: 100%;
+  }
+}
+@media (max-width: 370px) {
+  #big-slot .text h1 {
+    font-size: 24px;
+  }
+  #big-slot .text h2 {
+    font-size: 20px;
+  }
+  #big-slot .text p {
+    font-size: 12px;
+  }
 }
 
 #net-section {
@@ -508,6 +610,11 @@ a:hover {
   right: 0;
   top: 5px;
   z-index: 30;
+}
+@media (max-width: 992px) {
+  #net-section {
+    height: unset;
+  }
 }
 
 #work-types {
@@ -551,7 +658,7 @@ a:hover {
 }
 @media (max-width: 992px) {
   #work-types {
-    padding-top: 100px;
+    padding-top: 530px;
   }
   #work-types .icons-row {
     justify-content: center;
@@ -580,10 +687,18 @@ a:hover {
     width: 48%;
   }
 }
+@media (max-width: 450px) {
+  #work-types .icon-box__title {
+    font-size: 14px;
+  }
+  #work-types .icon-box__image img {
+    width: 100px;
+  }
+}
 
 #work-types-info {
   position: relative;
-  height: 1200px;
+  min-height: 1200px;
   background: #000;
   padding-top: 115px;
 }
@@ -626,6 +741,19 @@ a:hover {
   color: white;
   line-height: 1.2;
 }
+@media (max-width: 576px) {
+  #work-types-info {
+    height: 100%;
+  }
+  #work-types-info .grid-sizer,
+#work-types-info .grid-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #work-types-info .draw-image {
+    display: none;
+  }
+}
 
 #map {
   position: relative;
@@ -645,6 +773,7 @@ a:hover {
   top: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .callback:after {
   content: "";
@@ -714,4 +843,11 @@ a:hover {
 }
 #callback-form .button-wrapper {
   margin-top: 30px;
+}
+@media (max-width: 684px) {
+  #callback-form {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
