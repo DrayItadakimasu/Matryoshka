@@ -17,6 +17,7 @@ body{
   position: relative;
   width: 100%;
   background: #04172e;
+  max-width: 100vw;
 }
 input,textarea,button{
   &:focus{
@@ -34,4 +35,5 @@ a{
   position: relative;
   width: 1030px;
   margin: 0 auto;
+  max-width: calc(100% - 30px);
 }
